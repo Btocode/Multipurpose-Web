@@ -108,7 +108,7 @@ li, a, button {
   text-align: center;
 }
 .button-wrapper button{
-  margin-top: 15px;
+  margin-top: 20px;
   padding: 10px 15px;
   height: 40px;
   width: 80px;
@@ -116,6 +116,7 @@ li, a, button {
 }
 button:hover{
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 #btn-1{
   background-color: #FF0075;
@@ -133,6 +134,19 @@ button:hover{
 /* Footer Section */
 
 .fo-container{
-  
-
+  width: 100%;
+  background-color: #0f4c5c;
+  min-height: 60px;
+  position: absolute;
+  bottom:0;
+}
+.fo-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.fo-content p{
+  font-size: 18px;
+  color: #edf7fa;
 }
