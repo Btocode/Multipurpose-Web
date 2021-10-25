@@ -20,8 +20,8 @@ const toggleCase = () => {
 var sortedLines;
 var counter = true;
 const sortLines = () => {
- 
-    sortedLines = new Array(inputString.value.split("\n").sort());
+
+  sortedLines = new Array(inputString.value.split("\n").sort());
 
   inputString.value = sortedLines.toString().replaceAll(",", "\n");
 }
@@ -30,36 +30,36 @@ var lineContainer;
 const stripLines = () => {
   lineContainer = new Array(inputString.value.split("\n"));
   var newString = "";
-  for (var i = 0; i < lineContainer.length;i++) {
+  for (var i = 0; i < lineContainer.length; i++) {
     if (lineContainer[i] != " ") {
       newString += lineContainer[i];
     }
   }
-  newString.replace(" ","")
-  newString = newString.replace(/^,|,$|(,)+/g, '\n')
-  inputString.value = newString;
+  newString = newString.replaceAll(/^,|,$|(,)+/g, '\n');
+  newString = newString.replace(/^,/, '');
+  inputString.value = newString.trim();
 }
-  
+
 var iterator = 0;
 const addNumbers = () => {
   if (iterator == 0) {
     inputString.value = inputString.value.split("\n").map((line, index) => `${index + 1}. ${line}`).join('\n');
     iterator++;
   }
- 
+
 }
 
 
 const shuffleLines = () => {
   var array = inputString.value.split("\n");
-    var index = array.length, temp, randIndex;
-    while (0 !== index) {
-      randIndex = Math.floor(Math.random() * index);
-      index -= 1;
-      temp = array[index];
-      array[index] = array[randIndex];
-      array[randIndex] = temp;
-    }
+  var index = array.length, temp, randIndex;
+  while (0 !== index) {
+    randIndex = Math.floor(Math.random() * index);
+    index -= 1;
+    temp = array[index];
+    array[index] = array[randIndex];
+    array[randIndex] = temp;
+  }
   inputString.value = array.toString().replaceAll(",", "\n");
 }
 
@@ -72,3 +72,5 @@ const reverseText = () => {
   inputString.value = array.toString().replaceAll(",", "\n");
 
 }
+
+
