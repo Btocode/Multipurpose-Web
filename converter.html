@@ -46,20 +46,21 @@
             <p>Convert </p>
           </div>
           <div class="input">
-            <input type="number" placeholder="Enter input here">
+            <input id="user-input" onkeydown="handleKey()" type="number" placeholder="Enter input here" size="40">
           </div>
           <div class="option">
-            <select name="" id="">
-              <option value="">kg to lbs</option>
-              <option value="">lbs to kg</option>
+            <select name="" id="selector">
+              <option value="kg">kg to lbs</option>
+              <option value="lbs">lbs to kg</option>
             </select>
           </div>
           <div class="submit">
-            <button type="submit">Go</button>
+            <button id="btn-submit" type="submit" onclick="convert()">Go</button>
           </div>
-          <div class="output">
-            <span id="output"></span>
-          </div>
+          
+        </div>
+        <div class="output">
+          <span id="output"></span>
         </div>
       </div>
     </div>

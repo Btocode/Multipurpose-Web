@@ -1,22 +1,19 @@
 const convert = () => {
   var lbsToKgs = 0.45359;
   var kgsTolbs = 2.20462;
+  var selectorInput = document.getElementById("selector").value;
+  var outputValue = document.getElementById("output");
+  var userInput = document.getElementById("user-input").value;
 
-  if (document.getElementById("convert").value == "1") {
-    document.getElementById("result").innerHTML =
-      (document.getElementById("convert-input").value * lbsToKgs).toFixed(3) +
+  if (selectorInput == "lbs") {
+    outputValue.innerHTML = userInput + " Pounds = " +
+      (userInput * lbsToKgs).toFixed(4) +
       " Kilograms";
-  } else if (document.getElementById("convert").value == "2") {
-    document.getElementById("result").innerHTML =
-      (document.getElementById("convert-input").value * kgsTolbs).toFixed(3) +
+  } else if (selectorInput == "kg") {
+    outputValue.innerHTML = userInput + " Kilograms = " +
+      (userInput * kgsTolbs).toFixed(4) +
       " Pounds";
   } else {
-    document.getElementById("result").innerHTML = "0";
-  }
-};
-
-var handleKey = () => {
-  if (event.key == "Enter") {
-    document.getElementById("go-button").click();
+    outputValue.innerHTML = "0";
   }
 };

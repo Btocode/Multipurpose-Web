@@ -21,8 +21,9 @@ li, a, button {
 
 .contents{
   display: flex;
-  min-width: 60%;
-  justify-content: space-evenly;
+  min-height: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .text p{
@@ -60,10 +61,24 @@ li, a, button {
   border-color: #fff;
 }
 
+.text ,.input,.option, .submit {
+  margin-left: 20px;
+}
+
+.output{
+  height: 40px;
+}
+.output span{
+  font-size: 25px;
+}
 .submit button:hover{
   background-color: #1B7895;
   color: #fff;
 }
+.main-container{
+  flex-direction: column;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
