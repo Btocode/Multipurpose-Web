@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/CSS/styles.css">
+
+  <title>The Multipurpose Web</title>
+</head>
+
+<body onload="generateQuotes()">
+
+  <header class="sticky">
+    <div class="nav-container">
+      <div class="menu-container" style="display: flex;">
+
+        <div class="nav-items">
+          <nav>
+            <ul class="nav-links">
+              <li class="active"><a href="#">Quote Box</a></li>
+              <li><a href="#">Hero Converter</a></li>
+              <li><a href="#">ProCalc</a></li>
+              <li><a href="#">MagicalJS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <div class="content-wrapper">
+        <div class="quotes-container">
+          <p id="quote">Click Anywhere to Generate a Quote</p>
+
+        </div>
+        <div class="button-wrapper">
+          <button id="btn-1" onclick="changeColor('red')"></button>
+          <button id="btn-2" onclick="changeColor('blue')"></button>
+          <button id="btn-3" onclick="changeColor('green')"></button>
+          <button id="btn-4" onclick="changeColor('yellow')"></button>
+        
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="fo-container">
+      <div class="fo-content">
+        <p>All</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- javascript -->
+  <script src="./Assets/JS/script.js"></script>
+</body>
+
+</html>
