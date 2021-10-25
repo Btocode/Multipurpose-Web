@@ -2,7 +2,7 @@ var inputString = document.getElementById("txt-area");
 
 const clearScreen = () => {
   inputString.value = "";
-  counter = true;
+  // counter = true;
   iterator = 0;
 };
 
@@ -21,18 +21,19 @@ const toggleCase = () => {
 var sortedLines;
 var counter = true;
 const sortLines = () => {
-  if (counter) {
+  // if (counter) {
     sortedLines = new Array(inputString.value.split("\n").sort());
   
-  var s = "";
-  for (var i = 0; i < sortedLines.length; i++) {
-    s = s + sortedLines[i];
-  }
-  var newString = s.substring(0, s.length - 1);
-  let stemp = newString.split(",");
-    inputString.value = stemp.join("\n");
-    counter = false;
-  }
+  // var s = "";
+  // for (var i = 0; i < sortedLines.length; i++) {
+  //   s = s + sortedLines[i];
+  // }
+  inputString.value = sortedLines.toString().replaceAll(",", "\n");
+  // var newString = s.substring(0, s.length - 1);
+  // let stemp = newString.split(",");
+  //   inputString.value = stemp.join("\n");
+    // counter = false;
+  // }
 }
 var lineContainer;
 
