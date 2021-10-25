@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assets/CSS/styles.css">
+  <link rel="stylesheet" href="Assets/CSS/conv.css">
 
   <title>The Multipurpose Web</title>
 </head>
 
-<body onload="generateQuotes()">
+<body>
 
   <header class="sticky">
     <div class="nav-container">
@@ -23,8 +24,8 @@
         <div class="nav-items">
           <nav>
             <ul class="nav-links">
-              <li class="active"><a href="./home.html">Quote Box</a></li>
-              <li><a href="./converter.html">Hero Converter</a></li>
+              <li><a href="./home.html">Quote Box</a></li>
+              <li class="active"><a href="#">Hero Converter</a></li>
               <li><a href="#">ProCalc</a></li>
               <li><a href="#">MagicalJS</a></li>
             </ul>
@@ -35,25 +36,36 @@
     </div>
   </header>
 
+<!-- Main sections starts from here -->
+
   <main>
     <div class="main-container">
       <div class="content-wrapper">
-        <div class="quotes-container">
-          <p id="quote">Click Anywhere to Generate a Quote</p>
-
-        </div>
-        <div class="button-wrapper">
-          <button id="btn-1" onclick="changeColor('red')"></button>
-          <button id="btn-2" onclick="changeColor('blue')"></button>
-          <button id="btn-3" onclick="changeColor('green')"></button>
-          <button id="btn-4" onclick="changeColor('yellow')"></button>
-
+        <div class="contents">
+          <div class="text">
+            <p>Convert </p>
+          </div>
+          <div class="input">
+            <input type="number" placeholder="Enter input here">
+          </div>
+          <div class="option">
+            <select name="" id="">
+              <option value="">kg to lbs</option>
+              <option value="">lbs to kg</option>
+            </select>
+          </div>
+          <div class="submit">
+            <button type="submit">Go</button>
+          </div>
+          <div class="output">
+            <span id="output"></span>
+          </div>
         </div>
       </div>
     </div>
 
   </main>
-
+  
   <footer>
     <div class="fo-container">
       <div class="fo-content">
@@ -64,7 +76,7 @@
   </footer>
 
   <!-- javascript -->
-  <script src="./Assets/JS/script.js"></script>
+  <script src="./Assets/JS/conv.js"></script>
 </body>
 
 </html>
