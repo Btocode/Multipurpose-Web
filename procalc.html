@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/CSS/styles.css">
+  <link rel="stylesheet" href="Assets/CSS/calc.css">
+
+
+  <title>The Multipurpose Web</title>
+</head>
+
+<body >
+
+  <header class="sticky">
+    <div class="nav-container">
+      <div class="menu-container" style="display: flex;">
+
+        <div class="nav-items">
+          <nav>
+            <ul class="nav-links">
+              <li><a href="./home.html">Quote Box</a></li>
+              <li><a href="./converter.html">Hero Converter</a></li>
+              <li class="active"><a href="#">ProCalc</a></li>
+              <li><a href="#">MagicalJS</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <div class="content-wrapper">
+
+        <div class="contents">
+          <div class="num-container">
+            <div class="txt-container">
+              <p>Input Series of Numbers</p>
+            </div>
+            <div class="input-container">
+              <input type="text" id="input-values" placeholder="Enter values seperated by comma" onChange="proCalc()" size="25">
+            </div>
+          </div>
+          <div class="min-container">
+            <div class="txt-container">
+              <p>Min</p>
+            </div>
+            <div class="output-container">
+              <span id="min"></span>
+            </div>
+          </div>
+          <div class="max-container">
+            <div class="txt-container">
+              <p>Max</p>
+            </div>
+            <div class="output-container">
+              <span id="max"></span>
+            </div>
+          </div>
+          <div class="sum-container">
+            <div class="txt-container">
+              <p>Sum</p>
+            </div>
+            <div class="output-container">
+              <span id="sum"></span>
+            </div>
+          </div>
+          <div class="avg-container">
+            <div class="txt-container">
+              <p>Average</p>
+            </div>
+            <div class="output-container">
+              <span id="avg"></span>
+            </div>
+          </div>
+          <div class="rev-container">
+            <div class="txt-container">
+              <p >Reverse Order</p>
+            </div>
+            <div class="output-container">
+              <span id="rev"></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="fo-container">
+      <div class="fo-content">
+        <p>Copyright © BtoCode 2021 </p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- javascript -->
+  <script src="./Assets/JS/procalc.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+/* Basics */
+
+
+*{
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+li, a, button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #EDF0F1;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+/* Main Section  */
+.contents{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+.num-container , .min-container, .max-container, .sum-container,.avg-container,.rev-container{
+  display: flex;
+  width: 100%;
+}
+.txt-container{
+  width: 40%;
+  text-align: right;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-style: italic;
+}
+.output-container{
+  width: 40%;
+  padding: 10px;
+  font-size: 20px;
+}
+.input-container input[type = text]{
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  font-style: italic;
+}
+.input-container input[type = text]:focus{
+  outline-color: chartreuse;
+}
