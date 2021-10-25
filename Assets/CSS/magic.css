@@ -19,3 +19,52 @@ li, a, button {
 
 /* Main Section  */
 
+
+.contents{
+  
+  padding: 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+
+
+.buttons{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.buttons button{
+  color: black;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-style: italic;
+}
+.buttons button:hover{
+  background-color: #1B7895;
+  color: #fff;
+}
+
+.title {
+  width: 80%;
+  padding: 10px 20px;
+  font-style: italic;
+}
+
+.input-area textarea{
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 10px;
+  overflow: auto;
+  resize:none;
+  font-style: italic;
+}
+
+.input-area textarea:focus{
+  outline: 1px solid greenyellow;
+}
